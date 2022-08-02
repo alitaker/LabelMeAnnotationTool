@@ -12,6 +12,7 @@ RUN apt-get install -y \
  				libcgi-session-perl \
  				libapache2-mod-php \
  				make \
+				imagemagick \
  				php
 
 # Throws error 				
