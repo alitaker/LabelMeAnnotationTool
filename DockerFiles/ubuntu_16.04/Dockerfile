@@ -33,6 +33,7 @@ RUN mv ./LabelMeAnnotationTool/ /var/www/html/LabelMeAnnotationTool/
 RUN rm -r /var/www/html/LabelMeAnnotationTool/annotationCache/TmpAnnotations/*
 RUN cd /var/www/html/LabelMeAnnotationTool/ && make
 RUN chown -R www-data:www-data /var/www/html
+RUN cd /var/www/html/LabelMeAnnotationTool/annotationTool/sh && ./populate_dirlist.sh
 
 # port binding
 EXPOSE 80
