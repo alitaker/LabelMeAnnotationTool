@@ -1,3 +1,11 @@
+Fork with some improvements:
+- better docker file for Ubuntu 16 
+  - prevents PID problem on Apache when stopping container
+  - auto redirect to the web page of the tool
+  - remove sample project
+- minor improvements to js when labeling many labels in the same image
+===========
+
 [LabelMe](http://labelme.csail.mit.edu) annotation tool source code
 ===========
 
