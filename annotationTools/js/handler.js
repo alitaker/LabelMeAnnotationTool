@@ -157,8 +157,10 @@ function handler() {
         // Write XML to server:
         WriteXML(SubmitXmlUrl,LM_xml,function(){return;});
 
-	// Refresh object list:
-        if(view_ObjList) RenderObjectList();
+        // Refresh object list 1:
+        if (object_rerender_after_change) {
+          if(view_ObjList) RenderObjectList();
+        }
         selected_poly = -1;
         unselectObjects(); // Perhaps this should go elsewhere...
         StopEditEvent();
@@ -166,6 +168,7 @@ function handler() {
           scribble_canvas.annotationid = -1;
           scribble_canvas.cleanscribbles();
         } 
+
     };
     
     // Handles when the user clicks on the link for an annotation.

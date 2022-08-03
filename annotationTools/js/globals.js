@@ -88,3 +88,6 @@ var mt_N = 'inf';
 var object_choices = '...';
 
 var loaded_once = false;
+
+// Prevent re-rendering all annotation boxes after a change (slow when annotations are 100+)
+var object_rerender_after_change = false;

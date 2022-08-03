@@ -132,6 +132,7 @@ function StopEditEvent() {
   }
 
   // Render the object list:
+  if(object_rerender_after_change)
   if(view_ObjList) {
     RenderObjectList();
   }
