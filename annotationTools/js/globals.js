@@ -45,7 +45,7 @@ var ref;
 
 // Indicates whether we are in segmentation or polygon mode
 var drawing_mode = 0;
-var showImgName = false;
+var showImgName = true;
 
 // Scribble mode:
 var scribble_mode = true;
@@ -53,7 +53,7 @@ var threed_mode = false;
 var video_mode = false;
 var bounding_box = false;
 var bbox_mode = true;
-var autocomplete_mode = true;
+var autocomplete_mode = false;
 
 
 var wait_for_input;
