@@ -31,6 +31,13 @@ HOMEVIDEOS='../../VLMFrames'
 dirlist=$1
 folder=$2
 videodirlist='labelmevideo.txt'
+
+# If populating the entire db, remove the dirlist file
+if [ "$dirlist" == "" ] && [ "$folder" == "" ]; then
+    dirlist='labelme.txt';
+    rm $HOMEDIRLIST/$dirlist
+fi
+
 # Handle empty input argument cases:
 if [ "$dirlist" == "" ]; then
     dirlist='labelme.txt';
