@@ -39,4 +39,4 @@ RUN cd /var/www/html/LabelMeAnnotationTool/annotationTool/sh && ./populate_dirli
 EXPOSE 80
 
 # run
-CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
+CMD ["sh", "-c", "rm -rf /var/run/apache2/apache2.pid ; /usr/sbin/apache2ctl -D FOREGROUND"]
