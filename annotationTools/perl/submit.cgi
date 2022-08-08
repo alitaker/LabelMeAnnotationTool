@@ -135,5 +135,5 @@ $username =~ s/\s/_/g;
 
 print "Content-type: text/xml\n\n" ;
 print $stdin;
-print $fname;
+#print $fname;
 
